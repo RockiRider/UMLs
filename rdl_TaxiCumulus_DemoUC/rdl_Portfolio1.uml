@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5XKzIMyLEeiRnsc-ODf6kw" name="rdl_TaxiCumulus_DemoUC">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_5gyCIMyLEeiRnsc-ODf6kw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7aGUMMyLEeiRnsc-ODf6kw" name="TaxiCumulus">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_KseSEMyMEeiRnsc-ODf6kw" name="Authenticate"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PhkYwMyMEeiRnsc-ODf6kw" name="AuthenticateGoogle">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ZTYREMyMEeiRnsc-ODf6kw" general="_KseSEMyMEeiRnsc-ODf6kw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UCPuoMyMEeiRnsc-ODf6kw" name="AuthenticateFB">
+      <generalization xmi:type="uml:Generalization" xmi:id="_aMzzcMyMEeiRnsc-ODf6kw" general="_KseSEMyMEeiRnsc-ODf6kw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="__jzUgMyLEeiRnsc-ODf6kw" name="PremiumCustomer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_jhGz4MyNEeiRnsc-ODf6kw" general="_hD808MyNEeiRnsc-ODf6kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_EB8TwMyMEeiRnsc-ODf6kw" name="Google"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_FuNoUMyMEeiRnsc-ODf6kw" name="Facebook"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_H5vEsMyMEeiRnsc-ODf6kw" name="Repository"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xZlcEMyMEeiRnsc-ODf6kw" memberEnd="_xZmDIsyMEeiRnsc-ODf6kw _xZmDI8yMEeiRnsc-ODf6kw" navigableOwnedEnd="_xZmDIsyMEeiRnsc-ODf6kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xZmDIMyMEeiRnsc-ODf6kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xZmDIcyMEeiRnsc-ODf6kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xZmDIsyMEeiRnsc-ODf6kw" name="authenticate" type="_KseSEMyMEeiRnsc-ODf6kw" association="_xZlcEMyMEeiRnsc-ODf6kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xZmDI8yMEeiRnsc-ODf6kw" name="premiumcustomer" type="_hD808MyNEeiRnsc-ODf6kw" association="_xZlcEMyMEeiRnsc-ODf6kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7Udw0MyMEeiRnsc-ODf6kw" memberEnd="_7Ue-8cyMEeiRnsc-ODf6kw _7Ue-8syMEeiRnsc-ODf6kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7UeX4MyMEeiRnsc-ODf6kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Ue-8MyMEeiRnsc-ODf6kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7Ue-8cyMEeiRnsc-ODf6kw" name="google" type="_EB8TwMyMEeiRnsc-ODf6kw" association="_7Udw0MyMEeiRnsc-ODf6kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7Ue-8syMEeiRnsc-ODf6kw" name="authenticategoogle" type="_PhkYwMyMEeiRnsc-ODf6kw" association="_7Udw0MyMEeiRnsc-ODf6kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8N4FEMyMEeiRnsc-ODf6kw" memberEnd="_8N4sIsyMEeiRnsc-ODf6kw _8N4sI8yMEeiRnsc-ODf6kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8N4sIMyMEeiRnsc-ODf6kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8N4sIcyMEeiRnsc-ODf6kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8N4sIsyMEeiRnsc-ODf6kw" name="facebook" type="_FuNoUMyMEeiRnsc-ODf6kw" association="_8N4FEMyMEeiRnsc-ODf6kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8N4sI8yMEeiRnsc-ODf6kw" name="authenticatefb" type="_UCPuoMyMEeiRnsc-ODf6kw" association="_8N4FEMyMEeiRnsc-ODf6kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9Xc8QMyMEeiRnsc-ODf6kw" memberEnd="_9XdjUsyMEeiRnsc-ODf6kw _9XdjU8yMEeiRnsc-ODf6kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9XdjUMyMEeiRnsc-ODf6kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9XdjUcyMEeiRnsc-ODf6kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9XdjUsyMEeiRnsc-ODf6kw" name="repository" type="_H5vEsMyMEeiRnsc-ODf6kw" association="_9Xc8QMyMEeiRnsc-ODf6kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9XdjU8yMEeiRnsc-ODf6kw" name="authenticate" type="_KseSEMyMEeiRnsc-ODf6kw" association="_9Xc8QMyMEeiRnsc-ODf6kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hD808MyNEeiRnsc-ODf6kw" name="Customer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mAwGIMyNEeiRnsc-ODf6kw" memberEnd="_mAwtMcyNEeiRnsc-ODf6kw _mAwtMsyNEeiRnsc-ODf6kw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mAwGIcyNEeiRnsc-ODf6kw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mAwtMMyNEeiRnsc-ODf6kw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mAwtMcyNEeiRnsc-ODf6kw" name="authenticate" type="_KseSEMyMEeiRnsc-ODf6kw" association="_mAwGIMyNEeiRnsc-ODf6kw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mAwtMsyNEeiRnsc-ODf6kw" name="premiumcustomer" type="__jzUgMyLEeiRnsc-ODf6kw" association="_mAwGIMyNEeiRnsc-ODf6kw"/>
+  </packagedElement>
+</uml:Model>
